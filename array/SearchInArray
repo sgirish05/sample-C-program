@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int i, num[10], searchnumber,flag=0;
+    printf("Enter the numbers to add in array:");
+    for(i=0;i<5;i++){
+          scanf("%d",&num[i]);
+    }
+    printf("Enter the number to search:");
+    scanf("%d", &searchnumber);
+    for(i=0;i<5;i++){
+        if(searchnumber==num[i]){
+        printf("Number found in array location: %d", i+1);
+        flag=1;
+        break;
+        }
+    }
+    if(flag!=1){
+   printf("Sorry number not found in the array "); 
+    }
+    return 0;
+}
